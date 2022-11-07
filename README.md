@@ -4,6 +4,7 @@ this is the basic code for Monte Carlo modelling (quarter version)
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
 * the limit of PC number is 10000000, for quarter PCSEL simulator, that allow maximum 2000*2000 PC atoms matrix.
+* content of information array:
   * [0]  = time-step
   * [1]  = PC number
   * [2]  = input power from north;
