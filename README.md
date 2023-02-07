@@ -1,5 +1,5 @@
 # Probabilistic-Markov-Chains-Modelling-(Quarter)
-this is the basic code for Monte Carlo modelling (quarter version)
+this is the basic code for Probabilistic Markov Chains modelling (quarter version)
 
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
