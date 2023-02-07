@@ -1,6 +1,9 @@
 # Probabilistic-Markov-Chains-Modelling-(Quarter)
 this is the basic code for Probabilistic Markov Chains modelling (quarter version)
 
+##commission information
+
+
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
 * the limit of PC number is 10000000, for quarter PCSEL simulator, that allow maximum 2000*2000 PC atoms matrix.
