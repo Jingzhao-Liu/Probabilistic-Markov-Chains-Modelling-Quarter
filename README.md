@@ -7,15 +7,16 @@ URL2
 
 ## Commission Information
 * Please use following parameters for commission:
- * K1D = 
- * K1D = 
- * K1D = 
- * K1D = 
- * K1D = 
- * K1D = 
- * K1D = 
- * K1D = 
- * K1D = 
+ * period = 0.287
+ * K1D = 1334
+ * K2D = 386
+ * Krad = 38
+ * Ki = 5
+ * refl = 0 
+ * timestep = 4000
+ * file name = Name.csv
+* the default size in the code is 700*700, you can change it directly in code line 250 (OrderArray). multiple size is accepted in OrderArray, but the range of i in 253 should be changed as well. 
+* the result of commission is 17.9
 
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
