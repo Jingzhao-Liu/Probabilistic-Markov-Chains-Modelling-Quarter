@@ -247,7 +247,7 @@ int main()
 	printf_s("please type in saving name(.csv)\n");
 	char str[] = {""};
 	scanf_s("%s", &str,1);
-	int OrderArray[] = {500};//,200,300,400,500,600,700,800,900,1000 	
+	int OrderArray[] = {700};//,200,300,400,500,600,700,800,900,1000 	
 
 	fout.open(str);
 	for (int i = 0; i <1; i++)
