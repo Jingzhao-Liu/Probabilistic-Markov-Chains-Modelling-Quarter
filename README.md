@@ -1,8 +1,21 @@
-# Probabilistic-Markov-Chains-Modelling-(Quarter)
-This is the basic code for Probabilistic Markov Chains modelling (quarter version)
+# Probabilistic-Markov-Chains-Modelling-(Quarter version)
+This is the code of generally useing Probabilistic Markov Chain modelling (quarter version)
+This simulation links defines the scattering parameters of the photonic crystal (PC) and device level losses of the PCSEL.
+The criteria for conversion, agreement with data from the literature of the numerical model and other applications are discussed in following papers:
+URL1
+URL2
 
 ## Commission Information
-* use the script number of periods(tell people what )
+* Please use following parameters for commission:
+ * K1D = 
+ * K1D = 
+ * K1D = 
+ * K1D = 
+ * K1D = 
+ * K1D = 
+ * K1D = 
+ * K1D = 
+ * K1D = 
 
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
