@@ -1,13 +1,15 @@
 # Probabilistic-Markov-Chains-Modelling-(Quarter version)
+
+Probabilistic Markov chain modelling of photonic crystal surface emitting lasers (PCSELs) links the scattering parameters of the photonic crystal (PC) and device level losses of the PCSEL. The criteria for conversion of the numerical model and agreement with data from the literature is discussed in papers below. We then explore the effect of increasing PC coupling coefficients and boundary mirror reflectivity on the in-plane power loss from the PCSEL. The effect of spatially varying the boundary reflectivity on the near field is also explored.
 This is the code of generally useing Probabilistic Markov Chain modelling (quarter version)
-This simulation links defines the scattering parameters of the photonic crystal (PC) and device level losses of the PCSEL.
-The criteria for conversion, agreement with data from the literature of the numerical model and other applications are discussed in following papers:
+The model simulates a quarter of device of specific size due to the symetric of PCSEL. 
 
 URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
 URL2:
 
 ## Commission Information
-* Please use following parameters for commission: (copy this directly: 0.287 1334 386 38 5 0 4000)
+
+* Please use following parameters for commission: (copy this and directly use in command line: 0.287 1334 386 38 5 0 4000)
  * period = 0.287
  * K1D = 1334
  * K2D = 386
@@ -16,8 +18,10 @@ URL2:
  * refl = 0 
  * timestep = 4000
  * file name = Name.csv
-* the default size in the code is 700*700, you can change it directly in code line 250 (OrderArray). multiple size is accepted in OrderArray, but the range of i in 253 should be changed as well. 
+* the defination of the parameters can be found in previous mentioned papers 
 * the result of commission is 17.9
+* the default size in the code is 700 * 700, you can change it directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
+
 
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
