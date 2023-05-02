@@ -18,9 +18,11 @@ URL2:
  * refl = 0 
  * timestep = 4000
  * file name = Name.csv
-* the defination of the parameters can be found in previous mentioned papers 
-* the result of commission is 17.9
-* the default size in the code is 700 * 700, you can change it directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
+* the defination of the parameters can be found in previous mentioned papers. 
+* the current timestep will be print on command line to show the progress.
+* a csv file will be created (if not exist already) under default address (if no other address provided). the file contains the size(s) requested to be simulated and the alpha parallel of the size at the timestep set.
+* the result of commission (with example parameters) is 17.9.
+* the default size in the code is 700 * 700 (fit the example), it can be changed directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
 
 
 ## PC atom information array
