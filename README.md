@@ -2,11 +2,12 @@
 This is the code of generally useing Probabilistic Markov Chain modelling (quarter version)
 This simulation links defines the scattering parameters of the photonic crystal (PC) and device level losses of the PCSEL.
 The criteria for conversion, agreement with data from the literature of the numerical model and other applications are discussed in following papers:
-URL1
-URL2
+
+URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
+URL2:
 
 ## Commission Information
-* Please use following parameters for commission:
+* Please use following parameters for commission: (copy this directly: 0.287 1334 386 38 5 0 4000)
  * period = 0.287
  * K1D = 1334
  * K2D = 386
