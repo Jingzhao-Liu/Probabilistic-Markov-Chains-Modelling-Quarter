@@ -57,15 +57,12 @@ Then open a new project ....
  Assuming the application name from above (<name of output>).
  
 ```
-./<name of output>
+./<name of output> period K1D K2D ....
 ```
  
+ Where, 
  
-
-To run a simple example
-
-* Please use following parameters for commission: (copy this and directly use in command line: 0.287 1334 386 38 5 0 4000)
-  * period = 0.287
+ * period = 0.287
   * K1D = 1334
   * K2D = 386
   * Krad = 38
@@ -78,7 +75,11 @@ To run a simple example
 * a csv file will be created (if not exist already) under default address (if no other address provided). the file contains the size(s) requested to be simulated and the alpha parallel of the size at the timestep set.
 * the result of commission (with example parameters) is 17.9.
 * the default size in the code is 700 * 700 (fit the example), it can be changed directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
-
+For example, 
+ 
+ ```
+./<name of output> 0.287 1334 386 38 5 0 4000
+```
 
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
