@@ -33,7 +33,36 @@ Convergence criteria for probabilistic Markov chains modelling of photonic cryst
 In Alexey A. Belyanin and Peter M. Smowton, editors, Novel In-Plane Semiconductor Lasers XXII, volume
 12440, page 124400D. International Society for Optics and Photonics, SPIE, 2023
 ```
-## Commission Information
+## How To Compile
+
+### From Command Line
+
+Navigate to the folder containing the code then run
+```
+g++ <name of code> -o <name of output>
+```
+
+### From Visual Studio
+
+Visual studio can be downdlede (here)[https://visualstudio.microsoft.com/vs/features/cplusplus/] for free.
+
+Then open a new project ....
+<put in description here>
+ 
+ 
+##  How To Run
+ 
+### From Command Line
+ 
+ Assuming the application name from above (<name of output>).
+ 
+```
+./<name of output>
+```
+ 
+ 
+
+To run a simple example
 
 * Please use following parameters for commission: (copy this and directly use in command line: 0.287 1334 386 38 5 0 4000)
   * period = 0.287
