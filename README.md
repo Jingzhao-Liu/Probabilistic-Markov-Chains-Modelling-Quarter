@@ -89,7 +89,8 @@ At the core, the simulation calculates the probability of a photon's path thorug
 Within the simulation, the grid of atoms are represented by:
 
  ```
- PC_NOW[PC number][13] & PC_PRE[PC number][13]
+ PC_NOW[PC number][13] 
+ PC_PRE[PC number][13]
  ```
  
 Where:
