@@ -44,7 +44,7 @@ g++ <name of code> -o <name of output>
 
 ### From Visual Studio
 
-Visual studio can be downdlede (here)[https://visualstudio.microsoft.com/vs/features/cplusplus/] for free.
+Visual studio can be downdlede [here](https://visualstudio.microsoft.com/vs/features/cplusplus/) for free.
 
 Then open a new project ....
 <put in description here>
