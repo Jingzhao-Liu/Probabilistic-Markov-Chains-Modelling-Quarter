@@ -9,6 +9,25 @@ The model simulates a quarter of device of specific size due to the symetric of 
 
 URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
 
+Please cite using the following bibtex:
+```
+@inproceedings{10.1117/12.2649077,
+author = {Jingzhao Liu and Daehyun Kim and Zijun Bian and Jianyang Feng and Yunyun Gao and Paul Harvey and Richard Hogg},
+title = {{Convergence criteria for probabilistic Markov chains modelling of photonic crystal surface emitting lasers}},
+volume = {12440},
+booktitle = {Novel In-Plane Semiconductor Lasers XXII},
+editor = {Alexey A. Belyanin and Peter M. Smowton},
+organization = {International Society for Optics and Photonics},
+publisher = {SPIE},
+pages = {124400D},
+abstract = {Probabilistic Markov Chains modelling to define the relationship between microscopic scattering and macroscopic device level losses of photonic crystal surface emitting lasers (PCSEL) is reported. Here, we assume a priori knowledge of the microscopic scattering via simulation or measurement. The commissioning of the simulator, and convergence criteria are discussed.},
+keywords = {PCSEL, lattice, bandstructure, loss, simulation, modelling},
+year = {2023},
+doi = {10.1117/12.2649077},
+URL = {https://doi.org/10.1117/12.2649077}
+}
+```
+
 
 ## Commission Information
 
