@@ -1,3 +1,6 @@
+# Introduction
+This code simulates the propagation of photons in photonic crystal surface emitting lasers (PCSEL). 
+
 # Probabilistic-Markov-Chains-Modelling-(Quarter version)
 
 Probabilistic Markov chain modelling of photonic crystal surface emitting lasers (PCSELs) links the scattering parameters of the photonic crystal (PC) and device level losses of the PCSEL. The criteria for conversion of the numerical model and agreement with data from the literature is discussed in papers below. We then explore the effect of increasing PC coupling coefficients and boundary mirror reflectivity on the in-plane power loss from the PCSEL. The effect of spatially varying the boundary reflectivity on the near field is also explored.
