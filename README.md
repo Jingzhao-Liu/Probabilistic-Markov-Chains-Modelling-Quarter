@@ -81,6 +81,25 @@ For example,
 ./<name of output> 0.287 1334 386 38 5 0 4000
 ```
 
+ 
+## How the Simulator Works 
+
+At the core, the simulation calculates the probability of a photon's path thorugh a grid of atoms within the crystal.
+ 
+Within the simulation, the grid of atoms are represented by:
+
+ ```
+ PC_NOW[PC number][13] & PC_PRE[PC number][13]
+ ```
+ 
+Where:
+ ```
+ PC_NOW : Represents the representation of the crystal in the current simulation time step
+ PC_NUMBER: A specific atom witin the crystal
+ SIM_ACCOUNTING: An array of accounting information for the simulator
+ PC_PRE: 
+ ```
+ 
 ## PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
 * The limit of PC number is 10000000, for quarter PCSEL simulator, that allow maximum 2000*2000 PC atoms matrix.
