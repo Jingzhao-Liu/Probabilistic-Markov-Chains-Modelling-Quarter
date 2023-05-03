@@ -8,7 +8,7 @@ This is the code of generally useing Probabilistic Markov Chain modelling (quart
 The model simulates a quarter of device of specific size due to the symetric of PCSEL. 
 
 URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
-URL2:
+
 
 ## Commission Information
 
