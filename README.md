@@ -9,7 +9,7 @@ The model simulates a quarter of device of specific size due to the symetric of 
 
 URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
 
-Please cite using the following bibtex:
+If citing this work, pelase use the following references:
 ```
 @inproceedings{10.1117/12.2649077,
 author = {Jingzhao Liu and Daehyun Kim and Zijun Bian and Jianyang Feng and Yunyun Gao and Paul Harvey and Richard Hogg},
@@ -27,8 +27,12 @@ doi = {10.1117/12.2649077},
 URL = {https://doi.org/10.1117/12.2649077}
 }
 ```
-
-
+```
+Jingzhao Liu, Daehyun Kim, Zijun Bian, Jianyang Feng, Yunyun Gao, Paul Harvey, and Richard Hogg.
+Convergence criteria for probabilistic Markov chains modelling of photonic crystal surface emitting lasers.
+In Alexey A. Belyanin and Peter M. Smowton, editors, Novel In-Plane Semiconductor Lasers XXII, volume
+12440, page 124400D. International Society for Optics and Photonics, SPIE, 2023
+```
 ## Commission Information
 
 * Please use following parameters for commission: (copy this and directly use in command line: 0.287 1334 386 38 5 0 4000)
