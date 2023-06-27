@@ -48,13 +48,19 @@ In Alexey A. Belyanin and Peter M. Smowton, editors, Novel In-Plane Semiconducto
 
 ### From Command Line
 
-Navigate to the folder containing the code then run
+1. Navigate to the folder containing the code then run
 ```
 g++ <name of code> -o <name of output>
 ```
-type in the parameters according to the hint from command line.
+2. type in the parameters according to the hint from command line.
 
 for commissioning, please use example parameters:
+
+copy the parameters directly into the command line:
+
+```
+0.287 1337 386 38 5 0 4000 example_name.csv
+```
 Where, 
  
   * period = 0.287
@@ -80,9 +86,11 @@ copy the parameters directly into the command line:
 
 ### From Visual Studio
 
+Please follow process:
+
 Visual studio can be downdlede [here](https://visualstudio.microsoft.com/vs/features/cplusplus/) for free.
 
-Then open a new project ....
+Then creat a new project.
 <put in description here>
  
  
