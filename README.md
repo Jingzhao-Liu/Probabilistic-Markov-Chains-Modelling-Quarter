@@ -92,12 +92,15 @@ Visual studio can be downdlede [here](https://visualstudio.microsoft.com/vs/feat
 
 Then creat a new empty project.
 
+creat an empty .cpp file under folder source files under your new project, then copy the code provided in to the file and save it 
 
-<put in description here>
- 
- 
+or download the .cpp file provided and put it in your project folder and add it from Visual studio
 
- 
+use Local windows Debugger to compile and run it.
+
+the command line will appear after finish, please follow the command line process above.
+
+
 ## How the Simulator Works 
 
 At the core, the simulation calculates the probability of a photon's path thorugh a grid of atoms within the crystal.
@@ -111,27 +114,53 @@ Within the simulation, the grid of atoms are represented by:
  
 Where:
  ```
- PC_NOW : Represents the representation of the crystal in the current simulation time step
- PC_NUMBER: A specific atom witin the crystal
- SIM_ACCOUNTING: An array of accounting information for the simulator
- PC_PRE: 
+ PC_NOW: Represents the representation of the crystal in the current simulation time step
+ PC_PRE: Represents the representation of the crystal in the previous simulation time step
  ```
- 
-## PC atom information array
+
+ PC atom information array
 * Array PC_NOW[PC number][13] & PC_PRE[PC number][13]:
 * The limit of PC number is 10000000, for quarter PCSEL simulator, that allow maximum 2000*2000 PC atoms matrix.
-* Content of information array:
-  * [0]  = time-step
-  * [1]  = PC number
-  * [2]  = input power from north;
-  * [3]  = input power from south;
-  * [4]  = input power from west;
-  * [5]  = input power from east;
-  * [6]  = output power to north;
-  * [7]  = output power to south;
-  * [8]  = output power to west;
-  * [9]  = output power to east;
-  * [10] = out-of-plane loss;
-  * [11] = internal loss;
-  * [12] = in-plane loss;
+* Content of information array(variable names and explaination if appliable):
+  * [0]  = time-step(TimeStep: the current time step counting)
+  * [1]  = PC number(A specific atom witin the crystal, using plane map coordinate system, counting from south west conner 0 to total atom number-1)
+  * [2]  = input power from north;(represent the injection power coming from the atom on the north)
+  * [3]  = input power from south;(represent the injection power coming from the atom on the south)
+  * [4]  = input power from west;(represent the injection power coming from the atom on the west)
+  * [5]  = input power from east;(represent the injection power coming from the atom on the east)
+  * [6]  = output power to north;(represent the scatterd power going to the atom on the north)
+  * [7]  = output power to south;(represent the scatterd power going to the atom on the south)
+  * [8]  = output power to west;(represent the scatterd power going to the atom on the west)
+  * [9]  = output power to east;(represent the scatterd power going to the atom on the east)
+  * [10] = out-of-plane loss;(used to collect total out-of-plane loss)
+  * [11] = internal loss;(used to collect total internal loss)
+  * [12] = in-plane loss;(used to collect total in-plane loss)
+
+the simulation will stop at set time step:
+```
+for (TimeStep = 0; (TimeOut); TimeStep++)
+```
+
+in each time step, the PC_PRE will be updated from PC_NOW of last time step and PC_NOW will be calculated based on PC_PRE.
+```
+memcpy(&PC_PRE, &PC_NOW, sizeof(double) * 13 * PC_Total);
+memset(&PC_NOW, 0, sizeof(double) * 13 * PC_Total);
+```
+
+for each atom, the output power to 4 directions are calculated individually:
+```
+PC_NOW[PC_Counter][6] = Calculate_Energy_N(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]) + 1;
+PC_NOW[PC_Counter][7] = Calculate_Energy_S(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]) + 1;
+PC_NOW[PC_Counter][8] = Calculate_Energy_W(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]) + 1;
+PC_NOW[PC_Counter][9] = Calculate_Energy_E(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]) + 1;
+PC_NOW[PC_Counter][10] = Calculate_Energy_Vertical(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]);
+PC_NOW[PC_Counter][11] = Calculate_Energy_Internal(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]);
+```
+for one direction output, applying the probabilities calculated from scattering coefficients to power inputting from all 4 directions and adding them up: 
+
+example:
+```
+double Calculate_Energy_N(double N_in, double S_in, double W_in, double E_in)
+{return (S_in * Pforward + W_in * P2D + E_in * P2D + N_in * P1D);}
+```
 
