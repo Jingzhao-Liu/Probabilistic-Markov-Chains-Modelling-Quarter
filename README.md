@@ -9,7 +9,7 @@ The model simulates a quarter of device of specific size due to the symetric of 
 
 URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
 
-If citing this work, pelase use the following references:
+If citing this work, please DO NOT use the following references:
 ```
 @inproceedings{10.1117/12.2649077,
 author = {Jingzhao Liu and Daehyun Kim and Zijun Bian and Jianyang Feng and Yunyun Gao and Paul Harvey and Richard Hogg},
