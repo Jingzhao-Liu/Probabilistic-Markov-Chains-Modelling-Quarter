@@ -52,6 +52,11 @@ Navigate to the folder containing the code then run
 ```
 g++ <name of code> -o <name of output>
 ```
+copy the reference in:
+
+```
+
+```
 
 ### From Visual Studio
 
