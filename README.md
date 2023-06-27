@@ -54,14 +54,14 @@ g++ <name of code> -o <name of output>
 ```
 2. type in the parameters according to the hint from command line.
 
-for commissioning, please use example parameters:
+ for commissioning, please use example parameters:
 
-copy the parameters directly into the command line:
+ copy the parameters directly into the command line:
 
 ```
 0.287 1337 386 38 5 0 4000 example_name.csv
 ```
-Where, 
+ Where, 
  
   * period = 0.287
   * K1D = 1334
@@ -78,7 +78,7 @@ Where,
 * the default size in the code is 700 * 700 (fit the example), it can be changed directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
 For example, 
 
-copy the parameters directly into the command line:
+ copy the parameters directly into the command line:
 
 ```
 0.287 1337 386 38 5 0 4000 example_name.csv
