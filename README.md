@@ -44,24 +44,24 @@ Convergence criteria for probabilistic Markov chains modelling of photonic cryst
 In Alexey A. Belyanin and Peter M. Smowton, editors, Novel In-Plane Semiconductor Lasers XXII, volume
 12440, page 124400D. International Society for Optics and Photonics, SPIE, 2023
 ```
-## How To Compile
+## How To Compile & Run
 
 ### From Command Line
 
-1. Navigate to the folder containing the code then run
+Navigate to the folder containing the code then run
 ```
 g++ <name of code> -o <name of output>
 ```
-2. type in the parameters according to the hint from command line.
+type in the parameters according to the hint from command line.
 
- for commissioning, please use example parameters:
+For commissioning, please use example parameters:
 
- copy the parameters directly into the command line:
+Copy the parameters directly into the command line:
 
 ```
 0.287 1337 386 38 5 0 4000 example_name.csv
 ```
- Where, 
+Where, 
  
   * period = 0.287
   * K1D = 1334
@@ -78,7 +78,7 @@ g++ <name of code> -o <name of output>
 * the default size in the code is 700 * 700 (fit the example), it can be changed directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
 For example, 
 
- copy the parameters directly into the command line:
+Copy the parameters directly into the command line:
 
 ```
 0.287 1337 386 38 5 0 4000 example_name.csv
@@ -90,40 +90,12 @@ Please follow process:
 
 Visual studio can be downdlede [here](https://visualstudio.microsoft.com/vs/features/cplusplus/) for free.
 
-Then creat a new project.
+Then creat a new empty project.
+
+
 <put in description here>
  
  
-##  How To Run
- 
-### From Command Line
- 
- Assuming the application name from above (<name of output>).
- 
-```
-./<name of output> period K1D K2D ....
-```
- 
- Where, 
- 
-  * period = 0.287
-  * K1D = 1334
-  * K2D = 386
-  * Krad = 38
-  * Ki = 5
-  * refl = 0 
-  * timestep = 4000
-  * file name = Name.csv
-* the defination of the parameters can be found in previous mentioned papers. 
-* the current timestep will be print on command line to show the progress.
-* a csv file will be created (if not exist already) under default address (if no other address provided). the file contains the size(s) requested to be simulated and the alpha parallel of the size at the timestep set.
-* the result of commission (with example parameters) is 17.9.
-* the default size in the code is 700 * 700 (fit the example), it can be changed directly in OrderArray. Multiple size is accepted in OrderArray, but the range of i should match the quantity of size put in. 
-For example, 
- 
- ```
-./<name of output> 0.287 1334 386 38 5 0 4000
-```
 
  
 ## How the Simulator Works 
