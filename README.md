@@ -7,9 +7,19 @@ Probabilistic Markov chain modelling of photonic crystal surface emitting lasers
 This is the code of generally useing Probabilistic Markov Chain modelling (quarter version)
 The model simulates a quarter of device of specific size due to the symetric of PCSEL. 
 
-URL1: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
+Reference 1: (where this code be lead to, do not have yet will update when this code going to public)
+Reference 2: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
 
-If citing this work, please DO NOT use the following references:
+If citing this work, please use the following references(reference 1):
+
+```
+to be update
+```
+```
+to be update
+```
+
+please DO NOT use the following references(reference 2):
 ```
 @inproceedings{10.1117/12.2649077,
 author = {Jingzhao Liu and Daehyun Kim and Zijun Bian and Jianyang Feng and Yunyun Gao and Paul Harvey and Richard Hogg},
