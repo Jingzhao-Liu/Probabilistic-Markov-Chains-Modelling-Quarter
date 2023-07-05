@@ -147,7 +147,7 @@ memcpy(&PC_PRE, &PC_NOW, sizeof(double) * 13 * PC_Total);
 memset(&PC_NOW, 0, sizeof(double) * 13 * PC_Total);
 ```
 
-for each atom, the output power to 4 directions are calculated individually:
+for each atom, the output power to 6 directions (4 in-plane loss,  1 out-of-power loss, 1 internal loss) are calculated individually:
 ```
 PC_NOW[PC_Counter][6] = Calculate_Energy_N(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]) + 1;
 PC_NOW[PC_Counter][7] = Calculate_Energy_S(PC_NOW[PC_Counter][2], PC_NOW[PC_Counter][3], PC_NOW[PC_Counter][4], PC_NOW[PC_Counter][5]) + 1;
