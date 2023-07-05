@@ -50,7 +50,7 @@ In Alexey A. Belyanin and Peter M. Smowton, editors, Novel In-Plane Semiconducto
 
 Navigate to the folder containing the code then run
 ```
-g++ <name of code> -o <name of output>
+g++ <Probabilistic Markov Chains Modelling.cpp>
 ```
 type in the parameters according to the hint from command line.
 
