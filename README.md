@@ -88,7 +88,7 @@ Copy the parameters directly into the command line:
 
 Please follow process:
 
-Visual studio can be downdlede [here](https://visualstudio.microsoft.com/vs/features/cplusplus/) for free.
+Visual studio can be downloaded [here](https://visualstudio.microsoft.com/vs/features/cplusplus/) for free.
 
 Then creat a new empty project.
 
