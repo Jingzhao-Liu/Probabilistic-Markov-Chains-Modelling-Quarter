@@ -108,7 +108,7 @@ At the core, the simulation calculates the probability of a photon's path thorug
 Within the simulation, the grid of atoms are represented by:
 
  ```
- PC_NOW[PC number][13] 
+ PC_NOW[PC number][13] #PC number:A specific atom witin the crystal, using plane map coordinate system, counting from south west conner 0 to total atom number-1 
  PC_PRE[PC number][13]
  ```
  
