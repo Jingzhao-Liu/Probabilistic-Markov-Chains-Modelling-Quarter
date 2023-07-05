@@ -14,10 +14,10 @@ Reference 2: http://dx.doi.org/10.1117/12.2649077 (not yet activated)
 If citing this work, please use the following references(reference 1):
 
 ```
-to be update
+Will be updated after paper published
 ```
 ```
-to be update
+Will be updated after paper published
 ```
 
 please DO NOT use the following references(reference 2):
